@@ -6,4 +6,49 @@ $custom-colors: (
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+// Footer Styles
+.footer {
+  background-color: #000; // Dark background
+  color: #fff; // White text
+  padding: 20px 0;
+
+  h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  // Social Media Icons
+  .social-icons {
+    a {
+      font-size: 2rem; // Increased font size for larger icons
+      color: #f8f9fa; // Light gray
+      margin-right: 15px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: rgb(255, 138, 96); // Highlight color
+      }
+    }
+  }
+
+  // Bottom Text
+  .text-center {
+    border-top: 1px solid #444; // Separator line
+    margin-top: 20px;
+    padding-top: 10px;
+
+    p {
+      font-size: 0.85rem;
+      margin: 0;
+    }
+  }
+}
+
+
+
 @import './node_modules/bootstrap/dist/css/bootstrap.min.css'

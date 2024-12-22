@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grants</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> <!-- Link to custom styles -->
+  <style>
+    /* Custom CSS for card and image consistency */
+    .grant-card {
+      height: 100%; /* Ensures all cards take the same height */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .grant-card img {
+      height: 200px; /* Consistent image height */
+      object-fit: cover; /* Ensures the image scales without distortion */
+    }
+
+    .grant-card .card-body {
+      flex-grow: 1; /* Ensures the body stretches to fill available space */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .grant-card .grant-btn {
+      margin-top: 20px; /* Ensures consistent spacing between content and button */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient border-1 border-bottom py-3" style="background-color: #000000;">
+    <div class="container-xl">
+      <a class="navbar-brand fw-bold" href="index.html">Stay Finder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="buy.html">Buy</a></li>
+          <li class="nav-item"><a class="nav-link" href="rent.html">Rent</a></li>
+          <li class="nav-item"><a class="nav-link" href="new-homes.html">New Homes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="grants.html">Grants</a></li>
+          <li class="nav-item"><a class="nav-link" href="more-info.html">More Info</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section text-center text-white py-5">
+    <div class="container">
+</div>
+  </header>
+
+  <!-- Featured Grants Section -->
+  <section id="grants-list" class="grants-section py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Featured Grants</h2>
+      <p class="text-center section-description">Explore some of the most popular grants available to support your housing journey.</p>
+
+      <div class="row g-4">
+        <!-- Grant Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card grant-card">
+            <img src="images/firsttime.png" class="card-img-top" alt="First-Time Buyer Grant">
+            <div class="card-body">
+              <h5 class="card-title">First-Time Buyer Grant</h5>
+              <p class="card-text">Get up to €20,000 to assist with your first home purchase.</p>
+              <a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grant Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card grant-card">
+            <img src="images/greenhome.png" class="card-img-top" alt="Green Home Grant">
+            <div class="card-body">
+              <h5 class="card-title">Green Home Grant</h5>
+              <p class="card-text">Funding for eco-friendly upgrades and energy-efficient homes.</p>
+              <a href="#" style="background-color: rgb(255, 138, 96);"
+              class="btn text-light fw-semibold mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grant Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card grant-card">
+            <img src="images/home.png" class="card-img-top" alt="Renovation Grant">
+            <div class="card-body">
+              <h5 class="card-title">Renovation Assistance</h5>
+              <p class="card-text">Financial aid for renovations and essential repairs.</p>
+              <a href="#" style="background-color: rgb(255, 138, 96);"
+              class="btn text-light fw-semibold mt-auto">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    /* Custom Inline Styles as Backup */
+    .grant-card,
+    .story-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .grant-card img,
+    .story-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .btn-learn-more {
+      background-color: rgb(255, 138, 96);
+      color: #fff;
+      font-weight: 600;
+    }
+  </style>
+  <!-- Success Stories Section -->
+<section class="success-stories py-5">
+    <div class="container">
+      <h2 class="text-center section-title">Success Stories</h2>
+      <p class="text-center section-description">See how our grants have transformed lives and supported dreams.</p>
+  
+      <div class="row g-4">
+        <!-- Story Card 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card story-card h-100">
+            <img src="images/05_Freed_FamilyPortraits-1536x1024.png" class="card-img-top" alt="Success Story 1">
+            <div class="card-body">
+              <h5 class="card-title">The Johnson Family</h5>
+              <p class="card-text">With the First-Time Buyer Grant, the Johnson family purchased their dream home and started a new chapter of their lives.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Story Card 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card story-card h-100">
+            <img src="images/9E953704-825F-4CEE-AEF8-37E829AE2EA3.jpeg.webp" class="card-img-top" alt="Success Story 2">
+            <div class="card-body">
+              <h5 class="card-title">Emma's Green Haven</h5>
+              <p class="card-text">Emma used the Green Home Grant to install solar panels and reduce her carbon footprint while saving on energy costs.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Story Card 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="card story-card h-100">
+            <img src="images/KMP_5151-scaled.jpg" class="card-img-top" alt="Success Story 3">
+            <div class="card-body">
+              <h5 class="card-title">Michael's Renovation</h5>
+              <p class="card-text">Thanks to the Renovation Assistance Grant, Michael restored his family home, making it safe and comfortable again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <div class="container">
+    <h2 class="text-center section-title">Frequently Asked Questions</h2>
+    <p class="text-center section-description">Find answers to common questions about housing grants.</p>
+
+    <div class="accordion" id="faqAccordion">
+      
+        <!-- FAQ Item 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqContent1" aria-expanded="true" aria-controls="faqContent1">
+            Who is eligible for the First-Time Buyer Grant?
+          </button>
+        </h2>
+        <div id="faqContent1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            First-time buyers who meet specific income and residency criteria are eligible for this grant.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqContent2" aria-expanded="false" aria-controls="faqContent2">
+            How do I apply for the Green Home Grant?
+          </button>
+        </h2>
+        <div id="faqContent2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Applications can be submitted through the official government housing portal.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Stay Finder. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
