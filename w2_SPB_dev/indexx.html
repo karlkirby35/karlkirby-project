@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Bootstrap demo</title>
+	<link href="./website.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+</head>
+
+<body class="bg-custom-color">
+	<header #="top">
+
+		<!--Section 1-->
+		<!--Nav Bar With Orange Colour Filter-->
+
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient border-1 border-bottom py-3"
+			style="background-color: #000000;">
+
+			<!--Name of website which stays on screen when scrolling (fixed-top)-->
+			<div class="container-xl">
+
+				<a class="navbar-brand fw-bold" href="#">Stay Finder</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Links -->
+				<div class="collapse navbar-collapse" id="navbarScroll">
+					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Buy</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Rent</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">New Homes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="grants.html">Grants</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="more-info.html">More Info</a>
+						</li>
+					</ul>
+
+					<!-- Navbar Search Bar -->
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+						<button class="btn btn-outline-light" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<!--End Of Section 1-->
+
+
+		<!--Section 2-->
+		<!--Get Started Section-->
+		<div class="container-fluid mt-5" style="background-color: #eeeeee;"> <!-- Added mt-5 for top margin -->
+			<div class="container-xl">
+				<div class="row vh-50 d-flex align-items-center">
+					<div class="col-md-6">
+						<h1 class="fw-bold lh-1 display-5">
+							Time to find your dream accommodation!
+						</h1>
+						<p class="fw-semibold text-uppercase">
+							we will assist you in finding what you're looking for
+						</p>
+					</div>
+					<div class="col-md-6">
+						<img src="images/1.png" class="img-fluid" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Of Section 2-->
+
+		<!-- carousel arrow styles-->
+
+
+		<style>
+			.carousel-control-prev,
+			.carousel-control-next {
+				width: 2rem;
+				height: 2rem;
+				background-color: black;
+				border-radius: 20px;
+
+			}
+		</style>
+
+		<style>
+			.card-img-top {
+				height: 200px;
+				/* Set a fixed height */
+				object-fit: cover;
+				/* Ensures images fit nicely within the set height */
+			}
+
+			.card {
+				height: 200px
+			}
+		</style>
+
+
+		<!-- Featured Housing -->
+		<main id="main">
+			<div class="container-fluid py-5">
+				<p class="text-md-left fs-2 fw-bold">Featured Housing Properties</p>
+
+				<!-- Carousel -->
+				<div id="featuredPropertiesCarousel" class="carousel slide" data-bs-ride="carousel">
+					<!-- Carousel Inner -->
+					<div class="carousel-inner">
+						<!-- Slide 1 -->
+						<div class="carousel-item active">
+							<div class="row">
+								<!-- property 1 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/card_1.png" class="card-img-top" alt="Property 1">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€495,000</h5>
+											<p class="card-text">22 Patrick Street, Dun Laoghaire, Co. Dublin, A96CF51
+											</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- property 2 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/card_2.png" class="card-img-top" alt="Property 2">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€1,750,000</h5>
+											<p class="card-text">30 Sandycove Road, Sandycove, Sandycove, Co. Dublin,
+												A96V9P1</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- property 3 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/card_3.png" class="card-img-top" alt="Property 3">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€800,000</h5>
+											<p class="card-text">129 Glenageary Avenue, Dun Laoghaire, A96 N9Y6,
+												Glenageary, Co. Dublin</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- property 4 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/card_4.png" class="card-img-top" alt="Property 4">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€585,000</h5>
+											<p class="card-text">Apartment 22, The Anchorage, Clarence Street, Dun
+												Laoghaire</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Second slide of carousel -->
+						<!-- Slide 2 -->
+						<div class="carousel-item">
+							<div class="row">
+
+								<!-- property 5 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/property5.jpeg" class="card-img-top" alt="Property 5">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€1,100,000</h5>
+											<p class="card-text">Clonmethan, Oldtown, Co. Dublin, A45P998</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- property 6 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/property6.jpeg" class="card-img-top" alt="Property 5">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€420,000</h5>
+											<p class="card-text">30 Callenders Mill, Celbridge, Co. Kildare, W23FY00</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- property 7 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/property7.jpeg" class="card-img-top" alt="Property 5">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€595,000</h5>
+											<p class="card-text">The Ballagh, Archerstown, Durrow, Co. Laois, R32VYP5
+											</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- property 8 -->
+								<div class="col-3">
+									<div class="card h-100">
+										<img src="images/property8.jpeg" class="card-img-top" alt="Property 5">
+										<div class="card-body d-flex flex-column">
+											<h5 class="card-title">€1,150,000</h5>
+											<p class="card-text">Saint Theresa's, Taylors Hill Road, Taylor's Hill, Co.
+												Galway, H91P6PT</p>
+											<a href="#" style="background-color: rgb(255, 138, 96);"
+												class="btn text-light fw-semibold mt-auto">Property details</a>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#featuredPropertiesCarousel"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#featuredPropertiesCarousel"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</main>
+
+		<!--Section 3-->
+
+
+
+		<!--End Of Section 3-->
+
+
+		<!--Section 4-->
+		<!--Location options-->
+
+
+
+		<style>
+			.box {
+				position: relative;
+				/* positions the title*/
+				display: flex;
+				justify-content: center;
+				/* centers text on y axis*/
+				align-items: center;
+				width: 100%;
+				height: 200px;
+				/* Fixed height */
+				overflow: hidden;
+				border-radius: 8px;
+
+
+			}
+
+			.box img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				/* image cover */
+			}
+
+			.box-title {
+				position: relative;
+				/* text is in the middle of x axis*/
+				bottom: 10px;
+				left: 10px;
+				color: white;
+				padding: 5px 10px;
+				font-weight: bold;
+				font-size: 40px;
+				text-shadow:
+
+					1px 1px 0px black
+			}
+		</style>
+
+		<body>
+
+
+			<div class="container-fluid mt-4">
+
+				<p class="text-md-left fs-2 fw-bold">
+					Popular Housing Destinations
+				</p>
+				<div class="row g-3"> <!-- space between components-->
+
+					<div class="col-md-4">
+						<div class="box">
+							<img src="images/cork.jpg" alt="Background 1">
+							<div class="box-title">Cork</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="box">
+							<img src="images/dublin.jpg" alt="Background 2">
+							<div class="box-title">Dublin</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="box">
+							<img src="images/galway.jpg" alt="Background 3">
+							<div class="box-title">Galway</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="box">
+							<img src="images/limerick.jpg" alt="Background 4">
+							<div class="box-title">Limerick</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="box">
+							<img src="images/rosslare.jpg" alt="Background 5">
+							<div class="box-title">Rosslare</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="box">
+							<img src="images/wexford.jpg" alt="Background 6">
+							<div class="box-title">Wexford</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--end of section 4-->
+
+
+			<!--section 5 -->
+
+			<style>
+				.grants {
+				  padding-top: 50px;
+				  position: relative;
+				}
+			  
+				.grants img,
+  .grants2 img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 100%;
+    max-height: 400px; /* Prevents the image from being too large */
+    width: 100%; /* Ensures full-width scaling */
+  }
+				
+			  </style>
+			  
+			  <!-- Grants Section 1 -->
+			  <div class="grants">
+				<div class="container-fluid my-5" style="background-color: #eeeeee">
+				  <div class="row align-items-center">
+					<!-- Text on the left -->
+					<div class="col-md-6">
+					  <h2 class="fw-bold">Discover Housing Grants</h2>
+					  <p>
+						Housing grants provide financial support to individuals and families, helping them achieve their dreams of homeownership or improving their living conditions. These grants often cover various needs, including purchasing a first home, making energy-efficient upgrades, or renovating existing properties.
+					  </p>
+					  <a href="#" style="background-color: rgb(255, 138, 96);"
+					  class="btn text-light fw-semibold mt-auto">Learn More</a>
+					</div>
+			  
+					<!-- Image on the right -->
+					<div class="col-md-6">
+					  <img src="images/WHAT-HOUSING-GRANTS-ARE-AVAILABLE-5-800x445.png" class="img-fluid" alt="Description of grants">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <!-- Grants Section 2 -->
+			  <div class="grants2">
+				<div class="container-fluid my-5" style="background-color:  #eeeeee;">
+				  <div class="row align-items-center">
+					<!-- Image on the left -->
+					<div class="col-md-6">
+					  <img src="images/grants.jpg" class="img-fluid" alt="Description of grants">
+					</div>
+			  
+					<!-- Text on the right -->
+					<div class="col-md-6">
+					  <h2 class="fw-bold">Types of Grants Available</h2>
+					  <p>
+						Grants come in various forms to cater to diverse needs. For first-time buyers, there are financial aids to assist with down payments. For eco-conscious homeowners, green home grants help fund energy-saving upgrades like solar panels and efficient insulation. Renovation grants provide essential funds for home repairs and structural improvements.
+					  </p>
+					  <a href="#" style="background-color: rgb(255, 138, 96);"
+					  class="btn text-light fw-semibold mt-auto">Learn More</a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			  
+
+
+
+			<!--end of section 5 -->
+
+
+
+			<!-- contact us email -->
+
+
+			<div class="container-fluid bg-light">
+				<div class="container-lg">
+					<div class="row justify-content-center mt-5 py-5">
+						<div class="col-5 text-center py-5">
+							<i class="display-1 text-success bi bi-envelope-fill"></i>
+						</div>
+						<div class="row justify-content-md-center justify-content-sm-start">
+							<div class="col-md-8">
+								<p class="text-md-center text-success text-uppercase fw-bold fs-6">
+
+								</p>
+								<p class="text-md-center fs-2 fw-semibold">
+									Get in contact with us by leaving your email.
+
+								</p>
+								<p class="text-md-center py-2">
+									Leave us your e-mail and we will get back to you. If you're interested in a property
+									listed we will aid you with the process. It's what stayfinder does best!
+								</p>
+								<div class="input-group pt-2 pb-5">
+									<input type="text" class="form-control py-3" placeholder="email"
+										aria-label="Recipient's username" aria-describedby="button-addon2" />
+									<button class="btn btn-outline-secondary" type="button" id="button-addon2">
+										Submit
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Footer -->
+<footer class="footer bg-dark text-white py-4">
+	<div class="container">
+	  <div class="row">
+		<!-- About Section -->
+		<div class="col-md-4">
+		  <h5 class="fw-bold">About Stay Finder</h5>
+		  <p>
+			Stay Finder is your trusted platform for accessing housing grants, finding your dream home, and making sustainable improvements.
+		  </p>
+		</div>
+  
+		<!-- Navigation Links -->
+		<div class="col-md-4">
+		  <h5 class="fw-bold">Quick Links</h5>
+		  <ul class="list-unstyled">
+			<li><a href="index.html" class="footer-link" >Home</a></li>
+			<li><a href="buy.html" class="footer-link">Buy</a></li>
+			<li><a href="rent.html" class="footer-link">Rent</a></li>
+			<li><a href="grants.html" class="footer-link">Grants</a></li>
+			<li><a href="more-info.html" class="footer-link">More Info</a></li>
+		  </ul>
+		</div>
+  
+		<!-- Social Media Section -->
+		<div class="col-md-4">
+		  <h5 class="fw-bold">Follow Us</h5>
+		  <div class="social-icons">
+			<a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+			<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+			<a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="text-center mt-4">
+		<p class="mb-0">&copy; 2024 Stay Finder. All rights reserved.</p>
+	  </div>
+	</div>
+  </footer>
+  
+
+
+
+
+
+			</main>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+				crossorigin="anonymous"></script>
+		</body>
+
+</html>
